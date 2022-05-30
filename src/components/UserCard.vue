@@ -15,7 +15,7 @@ const copyTag = () => {
 
 <template>
   <main
-    class="dark:bg-slate-700 bg-slate-300 rounded-lg flex flex-col items-center p-5 sm:p-8 py-12 shadow-lg shadow-gray-900"
+    class="dark:bg-slate-700 bg-slate-300 rounded-lg flex flex-col items-center p-5 sm:p-8 sm:py-12 shadow-lg shadow-gray-900"
   >
     <div class="flex flex-col items-center gap-y-4">
       <section class="flex w-full items-center justify-between">
