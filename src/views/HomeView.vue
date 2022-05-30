@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import NavbarTop from '@/components/NavbarTop.vue';
+import Navbar from '@/components/NavbarWrapper.vue';
 import UserCard from '@/components/UserCard.vue';
+import { useTitle } from '@vueuse/core';
+
+useTitle('Home');
 </script>
 
 <template>
-  <NavbarTop />
-  <main class="centered w-[95%] md:w-9/12">
-    <UserCard />
-  </main>
+  <Navbar>
+    <main class="centered w-[95%] md:w-9/12">
+      <UserCard />
+    </main>
+  </Navbar>
 </template>
 
 <style scoped>
