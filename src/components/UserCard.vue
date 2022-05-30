@@ -15,14 +15,14 @@ const copyTag = () => {
 
 <template>
   <main
-    class="dark:bg-slate-700 bg-slate-300 rounded-lg flex flex-col items-center p-8 py-12 shadow-lg shadow-gray-900"
+    class="dark:bg-slate-700 bg-slate-300 rounded-lg flex flex-col items-center p-5 sm:p-8 py-12 shadow-lg shadow-gray-900"
   >
     <div class="flex flex-col items-center gap-y-4">
       <section class="flex w-full items-center justify-between">
-        <div class="flex flex-col gap-y-4 sm:w-full">
+        <div class="flex flex-col gap-y-4">
           <router-link
             to="/contact"
-            class="flex flex-row items-center gap-x-2 hover:opacity-75"
+            class="flex flex-row items-center sm:gap-x-2 hover:opacity-75"
             >Leave me a message
             <ArrowRight class="w-5 h-5" />
           </router-link>
@@ -38,7 +38,7 @@ const copyTag = () => {
               class="w-7 h-7 hover:opacity-75 cursor-pointer"
               @click.prevent="copyTag"
             />
-            <p v-if="message" class="text-gray-600 dark:text-gray-300">
+            <p v-if="message" class="text-gray-600 dark:text-gray-300 text-sm">
               {{ message }}
             </p>
           </div>
