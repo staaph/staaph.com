@@ -13,7 +13,7 @@
       class="flex flex-col"
     >
       <!-- E-MAIL -->
-      <div class="flex flex-col md:my-2">
+      <section class="flex flex-col md:my-2">
         <label
           for="email"
           class="text-black text-xs md:text-base dark:text-white pb-2 font-semibold"
@@ -31,9 +31,9 @@
             required
           />
         </div>
-      </div>
+      </section>
       <!-- SUBJECT -->
-      <div class="flex flex-col my-2">
+      <section class="flex flex-col my-2">
         <label
           for="subject"
           class="text-black dark:text-white pb-2 font-semibold text-xs md:text-base"
@@ -52,9 +52,9 @@
             required
           />
         </div>
-      </div>
+      </section>
       <!-- TEXTAREA -->
-      <div class="w-full flex flex-col my-2">
+      <section class="w-full flex flex-col my-2">
         <label
           class="leading-none text-black dark:text-white font-semibold text-xs md:text-base"
           >Message</label
@@ -65,7 +65,7 @@
           class="h-32 resize-none leading-none text-black dark:text-white p-3 outline-none mt-4 bg-slate-400 dark:bg-gray-500 rounded"
           required
         ></textarea>
-      </div>
+      </section>
       <div class="flex items-center justify-center w-full">
         <button
           class="mt-2 font-semibold leading-none text-white py-4 px-6 bg-blue-700 rounded hover:bg-blue-600 active:scale-90"
