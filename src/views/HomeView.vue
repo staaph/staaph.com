@@ -8,7 +8,7 @@ useTitle('Home');
 
 <template>
   <Navbar>
-    <main class="centered w-[95%] md:w-9/12">
+    <main class="centered w-[95%] md:w-8/12">
       <UserCard />
     </main>
   </Navbar>
