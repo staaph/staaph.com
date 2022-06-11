@@ -3,14 +3,6 @@ import IconBar from '@/components/IconBar.vue';
 import GithubIcon from '@/assets/icons/GithubIcon.vue';
 import ArrowRight from '@/assets/icons/ArrowRight.vue';
 import DiscordIcon from '@/assets/icons/DiscordIcon.vue';
-import { useClipboard } from '@/composables/useClipboard';
-
-const { copy, message } = useClipboard();
-
-const discordTag = 'Likonima#0618';
-const copyTag = () => {
-  copy(discordTag, { msg: 'Copied Nametag', timer: 1500 });
-};
 </script>
 
 <template>
@@ -34,13 +26,13 @@ const copyTag = () => {
             >
               <GithubIcon class="w-7 h-7 hover:opacity-75" />
             </a>
-            <DiscordIcon
-              class="w-7 h-7 hover:opacity-75 cursor-pointer"
-              @click.prevent="copyTag"
-            />
-            <p v-if="message" class="text-gray-600 dark:text-gray-300 text-sm">
-              {{ message }}
-            </p>
+            <a
+              href="https://discord.com/users/805916788369784882"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              <DiscordIcon class="w-7 h-7 hover:opacity-75 cursor-pointer" />
+            </a>
           </div>
         </div>
         <img src="@/assets/icons/avatar.png" class="w-28 rounded-full" />
